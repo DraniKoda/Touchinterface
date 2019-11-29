@@ -2,9 +2,5 @@ Home
 index.html
 Anwesenheiten
 anwesenheit.html
-klaus
-https://medium.com/dreamcatcher-its-blog/making-an-stand-alone-executable-from-a-python-script-using-pyinstaller-d1df9170e263
-servus
-http://www.echoecho.com/htmllinks01.htm
-hans
-https://www.tutorialspoint.com/python/file_readline
+Test
+test.html
