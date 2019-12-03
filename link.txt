@@ -2,5 +2,3 @@ Home
 index.html
 Anwesenheiten
 anwesenheit.html
-Test
-test.html

@@ -18,47 +18,24 @@ count = 1
 pdftoppm_path = r"C:\Program Files (x86)\Poppler\bin\pdftoppm.exe"
 
 
-# pdf_dir = r"C:\Users\raphi\git\pdftoimg"
 os.chdir(readdir)
 
-
-# for pdf_file in os.listdir(readdir):
-
-# if pdf_file.endswith(".pdf"):
-
-#     subprocess.Popen('"%s" -jpeg %s out' % (pdftoppm_path, pdf_file))
-
-
 # scanning the directory of all the data and creating the html code per data and page
-while i < len(OrdnerListe):
-    NameSplit = OrdnerListe[i].split(".")
 
-    if NameSplit[1] == "pdf":
+for pdf_file in os.listdir(readdir):
+    if pdf_file.endswith(".pdf"):
         subprocess.Popen('"%s" -jpeg %s %s' %
-                         (pdftoppm_path, OrdnerListe[i], NameSplit[0]))
+                         (pdftoppm_path, pdf_file, count))
         count += 1
 
-    #     file = open(
-    #         '/Users/raphi/git/Webinterface_Touchpanel/data/' + OrdnerListe[i], 'rb')
-    #     pdf = PdfFileReader(file)
-    #     NumberOfPages = pdf.getNumPages()
-    #     file.close
-    #     j = 0
-    #     while j < NumberOfPages:
-    #         j += 1
-    #         dataId += 1
-    #         pagenum = str(j)
-    #         htmldata.append('\n<embed class = "embedded pdf" id="' + str(dataId) + '" src = "data/' +
-    #                         OrdnerListe[i] + '#page=' + pagenum +
-    #                         '&scrollbar=0&view=fit&toolbar=0&statusbar=0&navpanes=0" type = "application/pdf">')
-while i < len(OrdnerListe):
-    NameSplit = OrdnerListe[i].split(".")
 
-    if NameSplit[1] == "png":
+while i < len(OrdnerListe):
+
+    if OrdnerListe[i].endswith(".png"):
         dataId += 1
         htmldata.append('\n<img class="embedded" id="' + str(dataId) + '" src="data/' +
                         OrdnerListe[i] + '" alt="image">')
-    if NameSplit[1] == "jpg":
+    if OrdnerListe[i].endswith(".jpg"):
         dataId += 1
         htmldata.append('\n<img class="embedded" id="' + str(dataId) + '" src="data/' +
                         OrdnerListe[i] + '" alt="image">')
