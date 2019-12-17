@@ -31,20 +31,15 @@ for pdf_file in os.listdir(readdir):
 
 while i < len(OrdnerListe):
 
-    if OrdnerListe[i].endswith(".png"):
+    if OrdnerListe[i].endswith(".png") | OrdnerListe[i].endswith(".jpg"):
         dataId += 1
         htmldata.append('\n<img class="embedded" id="' + str(dataId) + '" src="data/' +
                         OrdnerListe[i] + '" alt="image">')
-    if OrdnerListe[i].endswith(".jpg"):
-        dataId += 1
-        htmldata.append('\n<img class="embedded" id="' + str(dataId) + '" src="data/' +
-                        OrdnerListe[i] + '" alt="image">')
-
     i += 1
 
-file = open('/Users/raphi/git/Webinterface_Touchpanel/link.txt', 'r+')
-link = file.readlines()
-file.close
+# file = open('/Users/raphi/git/Webinterface_Touchpanel/link.txt', 'r+')
+# link = file.readlines()
+# file.close
 
 file = open('/Users/raphi/git/Webinterface_Touchpanel/menschen.txt', 'r+')
 menschen = file.readlines()
@@ -61,20 +56,25 @@ htmlinput = htmlinput + '<link rel = "stylesheet" href = "stylesheet.css">\n'
 htmlinput = htmlinput + '<title>Webinterface Touchpanel</title>\n'
 htmlinput = htmlinput + '\n<body>\n'
 htmlinput = htmlinput + \
-    '<button type = "button" class = "leftButton" onclick = "prevStep()"><img src="arrowleft.png" alt="links" height="50" width="50"></button>\n'
+    '<button type = "button" class = "leftButton" onclick = "prevStep()"><img src="arrowleft.png" alt="links"></button>\n'
 htmlinput = htmlinput + \
-    '<button type = "button" class = "rightButton" onclick = "nextStep()"><img src="arrowright.png" alt="rechts" height="50" width="50"></button>\n'
+    '<button type = "button" class = "rightButton" onclick = "nextStep()"><img src="arrowright.png" alt="rechts"></button>\n'
+htmlinput = htmlinput + \
+    '<button type = "button" class = "stopButton" onclick = "stop()"><img src="stop.jpg" alt="stop"></button>\n'
 
 
-htmlinput = htmlinput + '<div class = "flex-container">\n'
-
-x = 0
-while x < len(link):
-    htmlinput = htmlinput + '<div class="controlBar">\n<a class="link" href ="' + \
-        link[x + 1] + '">' + link[x] + '</a>\n</div>\n'
-    x += 2
-
+htmlinput = htmlinput + '<div class = "flex-container" >\n'
+htmlinput = htmlinput + '<div class = "controlBar" >\n'
+htmlinput = htmlinput + \
+    '<a class = "link" href = "index.html"><img src="logo.png" alt="Dormakaba Logo"></a >\n'
+htmlinput = htmlinput + \
+    '<a class = "link" href = "anwesenheit.html">Anwesenheiten</a >\n </div >\n'
 htmlinput = htmlinput + '</div>\n'
+
+
+htmlinput = htmlinput + '<div class="flex-container">\n'
+htmlinput = htmlinput + '<div class="sidebar1"></div>\n'
+htmlinput = htmlinput + '<div class="main-content">\n'
 
 x = 0
 while x < len(htmldata):
@@ -82,6 +82,9 @@ while x < len(htmldata):
     x += 1
 
 
+htmlinput = htmlinput + '</div>\n'
+htmlinput = htmlinput + '<div class="sidebar2"></div>\n'
+htmlinput = htmlinput + '</div>\n'
 htmlinput = htmlinput + '\n<script defer src = "javascript.js"></script>\n'
 htmlinput = htmlinput + '<script defer src = "jquery-3.1.1.min.js"></script>\n'
 htmlinput = htmlinput + '\n</body>\n'
@@ -106,11 +109,21 @@ htmlinput = htmlinput + '<div class = "parent">\n'
 htmlinput = htmlinput + '<label for = "hy" >\n'
 htmlinput = htmlinput + '<div class = "flex-container">\n'
 
-x = 0
-while x < len(link):
-    htmlinput = htmlinput + '<div class="controlBar">\n<a class="link" href ="' + \
-        link[x + 1] + '">' + link[x] + '</a>\n</div>\n'
-    x += 2
+# x = 0
+# while x < len(link):
+#     htmlinput = htmlinput + '<div class="controlBar">\n<a class="link" href ="' + \
+#         link[x + 1] + '">' + link[x] + '</a>\n</div>\n'
+#     x += 2
+
+
+htmlinput = htmlinput + '<div class = "flex-container" >\n'
+htmlinput = htmlinput + '<div class = "controlBar" >\n'
+htmlinput = htmlinput + \
+    '<a class = "link" href = "index.html"><img src="logo.png" alt="Dormakaba Logo"></a >\n'
+htmlinput = htmlinput + \
+    '<a class = "link" href = "anwesenheit.html">Anwesenheiten</a >\n </div >\n'
+htmlinput = htmlinput + '</div>\n'
+
 htmlinput = htmlinput + '</div>\n'
 x = 0
 htmlinput = htmlinput + '</label>\n'
@@ -163,7 +176,7 @@ while x < len(menschen):
 
 htmlinput = htmlinput + '</div>\n'
 htmlinput = htmlinput + '\n<script defer src = "dist/dragula.js"></script>\n'
-htmlinput = htmlinput + '\n<script defer src = "example.js"></script>\n'
+htmlinput = htmlinput + '\n<script defer src = "anwesenheit.js"></script>\n'
 htmlinput = htmlinput + '<script defer src = "jquery-3.1.1.min.js"></script>\n'
 htmlinput = htmlinput + '\n</body>\n'
 htmlinput = htmlinput + '</html>'

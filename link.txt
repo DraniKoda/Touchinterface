@@ -1,4 +1,0 @@
-Home
-index.html
-Anwesenheiten
-anwesenheit.html
