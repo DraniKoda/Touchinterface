@@ -1,22 +1,22 @@
 var myIndex = 0;
 var check = 0;
-var timeperpage = 10000000;
+var timeperpage = 10000;
 
 carousel();
 function nextStep() {
     myIndex++;
     check = 1;
-    clearTimeout(timeout)
+    clearTimeout(timeout);
     carousel();
 }
 function prevStep() {
     myIndex--;
     check = 1;
-    clearTimeout(timeout)
+    clearTimeout(timeout);
     carousel();
 }
 function stop() {
-    clearTimeout(timeout)
+    clearTimeout(timeout);
     timeout = setTimeout(carousel, timeperpage * 10);
 
 }

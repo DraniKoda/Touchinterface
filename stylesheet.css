@@ -80,8 +80,7 @@ button>img{
 
 
 .parent {
-  background-color: white;
-  height: 960px;
+  height: 1080px;
 }
 .wrapper {
   display: table;
@@ -91,6 +90,9 @@ button>img{
 .wrapper:nth-child(even){
   background-color: #ededeb;
 }
+.wrapper:nth-child(odd){
+  background-color: #ffffff;
+}
 #maintable{
   font-style: bold;
 }
@@ -99,6 +101,9 @@ button>img{
   /* background-color: white; */
   width: 25%;
   border: solid black 1px;
+}
+.header{
+  font: bold;
 }
 .container.ex-over {
   background-color: rgba(255, 255, 255, 0.3);
