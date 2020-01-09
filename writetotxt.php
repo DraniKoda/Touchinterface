@@ -18,8 +18,8 @@ $menschen = 26;
 $myfile = fopen("menschen.txt", "r") or die("Unable to open file!");
 $fileread = fread($myfile,filesize("menschen.txt"));
 $splitting = preg_split("/\r\\n/",$fileread);
-var_dump($Names);
-var_dump($splitting[0]);
+// var_dump($Names);
+// var_dump($splitting[0]);
 // if ($Names == $splitting[0]){
 //     echo "yolo";
 // }
@@ -36,35 +36,35 @@ for ($x = 0; $x <= $menschen; $x=$x+2) {
 
     fwrite($myfile, $splitting[$x]."\r\n");
     
-    echo $splitting[$x];
+    // echo $splitting[$x];
 
     if ($Names == $splitting[$x]){
         // echo "servus";        
         if ($Nummer == 1){
             fwrite($myfile,$Nummer."\r\n");
-            echo $Nummer;
+            // echo $Nummer;
         }elseif ($Nummer == 2){
             fwrite($myfile,$Nummer."\r\n");
-            echo $Nummer;
+            // echo $Nummer;
         }elseif ($Nummer == 3){
             fwrite($myfile,$Nummer."\r\n");
-            echo $Nummer;
+            // echo $Nummer;
         }elseif ($Nummer == 4){
             fwrite($myfile,$Nummer."\r\n");
-            echo $Nummer;
+            // echo $Nummer;
         }
     }
     if($Names != $splitting[$x]) {
         if($x >= $menschen-1){
             fwrite($myfile, $splitting[$x+1]);
-            echo "yolo";
+            // echo "yolo";
 
         }else{
             fwrite($myfile, $splitting[$x+1]."\r\n");
-            echo "swag";
+            // echo "swag";
 
         }
-        echo $splitting[$x+1];
+        // echo $splitting[$x+1];
     }
     if($Nummer <= 0){
         $Nummer = 0;
