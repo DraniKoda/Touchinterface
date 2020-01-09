@@ -1,21 +1,23 @@
-import subprocess
+from PyPDF2 import PdfFileReader
+import fitz
 import os
 import io
-from PyPDF2 import PdfFileReader
 readdir = "./data"
 
 OrdnerListe = os.listdir(readdir)
-
-
 os.chdir(readdir)
 
 
-# scanning the directory of all the data and creating the html code per data and page
-
-pdftoppm_path = r"C:\Program Files (x86)\Poppler\bin\pdftoppm.exe"
 count = 1
 for pdf_file in OrdnerListe:
     if pdf_file.endswith(".pdf"):
-        subprocess.Popen('"%s" -jpeg %s %s' %
-                         (pdftoppm_path, pdf_file, count))
+        pagenumber = PdfFileReader(open(pdf_file, 'rb')).getNumPages()
+        # print(pagenumber)
+
+        for i in range(pagenumber):
+            # print(i)
+            doc = fitz.open(pdf_file)
+            page = doc.loadPage(i)
+            pix = page.getPixmap()
+            pix.writePNG(str(count) + "_" + str(i) + ".png")
         count += 1
