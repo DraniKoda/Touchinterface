@@ -29,16 +29,16 @@ htmlinput = htmlinput + '<link rel = "stylesheet" href = "stylesheet.css">\n'
 htmlinput = htmlinput + '<title>Webinterface Touchpanel</title>\n'
 htmlinput = htmlinput + '\n<body>\n'
 htmlinput = htmlinput + \
-    '<button type = "button" class = "leftButton" onclick = "prevStep()"><img src="arrowleft.png" alt="links"></button>\n'
+    '<button type = "button" class = "leftButton" onclick = "prevStep()"><img src="design/arrowleft.png" alt="links"></button>\n'
 htmlinput = htmlinput + \
-    '<button type = "button" class = "rightButton" onclick = "nextStep()"><img src="arrowright.png" alt="rechts"></button>\n'
+    '<button type = "button" class = "rightButton" onclick = "nextStep()"><img src="design/arrowright.png" alt="rechts"></button>\n'
 htmlinput = htmlinput + \
-    '<button type = "button" class = "stopButton" onclick = "stop()"><img src="stop.jpg" alt="stop"></button>\n'
+    '<button type = "button" class = "stopButton" onclick = "stop()"><img src="design/stop.jpg" alt="stop"></button>\n'
 
 htmlinput = htmlinput + '<div class = "flex-container" >\n'
 htmlinput = htmlinput + '<div class = "controlBar" >\n'
 htmlinput = htmlinput + \
-    '<a class = "link" href = "index.html"><img src="logo.png" alt="Dormakaba Logo"></a >\n'
+    '<a class = "link" href = "index.html"><img src="design/logo.png" alt="Dormakaba Logo"></a >\n'
 htmlinput = htmlinput + \
     '<a class = "link" href = "anwesenheit.php">Anwesenheiten</a >\n'
 htmlinput = htmlinput + \

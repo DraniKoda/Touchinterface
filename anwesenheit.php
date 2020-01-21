@@ -8,7 +8,7 @@
             <div class="flex-container">
                 <div class="flex-container">
                     <div class="controlBar">
-                        <a class="link" href="index.html"><img src="logo.png" alt="Dormakaba Logo"></a>
+                        <a class="link" href="index.html"><img src="design/logo.png" alt="Dormakaba Logo"></a>
                         <a class="link" href="anwesenheit.php">Anwesenheiten</a>
                         <a class="link" href="https://jira.dormakaba.net/secure/Dashboard.jspa">Jira</a>
                     </div>
