@@ -4,20 +4,21 @@
 <title>Webinterface Touchpanel</title>
 
 <body>
-<button type = "button" class = "leftButton" onclick = "prevStep()"><img src="design/arrowleft.png" alt="links"></button>
-<button type = "button" class = "rightButton" onclick = "nextStep()"><img src="design/arrowright.png" alt="rechts"></button>
-<button type = "button" class = "stopButton" onclick = "stop()"><img src="design/stop.jpg" alt="stop"></button>
-<div class = "flex-container" >
+<button type = "button" id = "leftButton" onclick = "prevStep()"><img src="design/arrowleft.png" alt="links"></button>
+<button type = "button" id = "rightButton" onclick = "nextStep()"><img src="design/arrowright.png" alt="rechts"></button>
+<button type = "button" id = "stopButton" onclick = "stop()"><img src="design/stop.jpg" alt="stop"></button>
+<button type = "button" id = "resumeButton" onclick = "resume()"><img src="design/resume.png" alt="resume"></button>
 <div class = "controlBar" >
 <a class = "link" href = "index.html"><img src="design/logo.png" alt="Dormakaba Logo"></a >
 <a class = "link" href = "anwesenheit.php">Anwesenheiten</a >
 <a class = "link" href = "https://jira.dormakaba.net/secure/Dashboard.jspa"> Jira </a>
 </div >
-</div>
 <div class="flex-container">
 <div class="sidebar1"></div>
 <div class="main-content">
-</div>
+
+<img class="embedded" id="1" src="data/1.png" alt="image">
+<img class="embedded" id="2" src="data/2.png" alt="image"></div>
 <div class="sidebar2"></div>
 </div>
 

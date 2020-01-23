@@ -1,6 +1,9 @@
 var myIndex = 0;
 var check = 0;
 var timeperpage = 10000;
+var timeout;
+var stopButton;
+var resumeButton;
 
 carousel();
 function nextStep() {
@@ -18,6 +21,19 @@ function prevStep() {
 function stop() {
     clearTimeout(timeout);
     timeout = setTimeout(carousel, timeperpage * 10);
+    stopButton = document.getElementById("stopButton");
+    stopButton.style.display = "none";
+    resumeButton = document.getElementById("resumeButton");
+    resumeButton.style.display = "block";
+
+}
+function resume() {
+    clearTimeout(timeout);
+    timeout = setTimeout(carousel, timeperpage);
+    stopButton = document.getElementById("stopButton");
+    stopButton.style.display = "block";
+    resumeButton = document.getElementById("resumeButton");
+    resumeButton.style.display = "none";
 
 }
 
@@ -39,6 +55,10 @@ function carousel() {
 
     }
     x[myIndex - 1].style.display = "flex";
+    stopButton = document.getElementById("stopButton");
+    stopButton.style.display = "block";
+    resumeButton = document.getElementById("resumeButton");
+    resumeButton.style.display = "none";
 
     if (check == 1) {
         check = 0;

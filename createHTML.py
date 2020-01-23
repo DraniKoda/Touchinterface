@@ -29,13 +29,15 @@ htmlinput = htmlinput + '<link rel = "stylesheet" href = "stylesheet.css">\n'
 htmlinput = htmlinput + '<title>Webinterface Touchpanel</title>\n'
 htmlinput = htmlinput + '\n<body>\n'
 htmlinput = htmlinput + \
-    '<button type = "button" class = "leftButton" onclick = "prevStep()"><img src="design/arrowleft.png" alt="links"></button>\n'
+    '<button type = "button" id = "leftButton" onclick = "prevStep()"><img src="design/arrowleft.png" alt="links"></button>\n'
 htmlinput = htmlinput + \
-    '<button type = "button" class = "rightButton" onclick = "nextStep()"><img src="design/arrowright.png" alt="rechts"></button>\n'
+    '<button type = "button" id = "rightButton" onclick = "nextStep()"><img src="design/arrowright.png" alt="rechts"></button>\n'
 htmlinput = htmlinput + \
-    '<button type = "button" class = "stopButton" onclick = "stop()"><img src="design/stop.jpg" alt="stop"></button>\n'
+    '<button type = "button" id = "stopButton" onclick = "stop()"><img src="design/stop.jpg" alt="stop"></button>\n'
+htmlinput = htmlinput + \
+    '<button type = "button" id = "resumeButton" onclick = "resume()"><img src="design/resume.png" alt="resume"></button>\n'
 
-htmlinput = htmlinput + '<div class = "flex-container" >\n'
+
 htmlinput = htmlinput + '<div class = "controlBar" >\n'
 htmlinput = htmlinput + \
     '<a class = "link" href = "index.html"><img src="design/logo.png" alt="Dormakaba Logo"></a >\n'
@@ -44,7 +46,6 @@ htmlinput = htmlinput + \
 htmlinput = htmlinput + \
     '<a class = "link" href = "https://jira.dormakaba.net/secure/Dashboard.jspa"> Jira </a>\n</div >\n'
 
-htmlinput = htmlinput + '</div>\n'
 
 htmlinput = htmlinput + '<div class="flex-container">\n'
 htmlinput = htmlinput + '<div class="sidebar1"></div>\n'
