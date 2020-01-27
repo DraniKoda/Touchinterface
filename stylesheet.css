@@ -36,11 +36,7 @@ button>img{
   max-width: 1080px;
 }
 
-.flex-container {
-  display: flex;
-  /* z-index: 5; */
-  flex: 1;
-}
+/* Control Bar */
 
 .controlBar{
   display: flex;
@@ -49,24 +45,36 @@ button>img{
   background-color: white;
   width: 100%;
 }
-.controlBar>a{
-  padding: 22px;
-  
-}
 .controlBar>a>img{
   height: 21px;
 }
 .controlBar>a{
   font-size: 21px;
+  padding: 22px;
+
+}
+.controlBar>div{
+  font-size: 21px;
+  padding: 22px;
+  justify-self: flex-end;
+  color: #003594;
+  font-weight: bold;
+  width: 100%;
 }
 
 a:link, a:visited{
-  color: blue;
+  color: #003594;
   text-decoration: none;
-  
+  font-weight: bold;
 }
 a:hover{
   background-color: #ededeb;
+}
+
+/* Main Content und Sidebars */
+.flex-container{
+  display: flex;
+  flex: 1;
 }
 
 .main-content {
@@ -94,12 +102,12 @@ a:hover{
 
 
 .parent {
-  height: 1080px;
+  height: 100%;
 }
 .wrapper {
   display: table;
   width: 100%;
-  height: 30px;
+  font-size: 20px;
 }
 .wrapper:nth-child(even){
   background-color: #ededeb;
@@ -107,17 +115,14 @@ a:hover{
 .wrapper:nth-child(odd){
   background-color: #ffffff;
 }
-#maintable{
-  font-style: bold;
-}
 .container{
   display: table-cell;
-  /* background-color: white; */
   width: 25%;
   border: solid black 1px;
 }
-.header{
-  font: bold;
+.heading{
+  font-weight: bold;
+  font-size: 25px;
 }
 .container.ex-over {
   background-color: rgba(255, 255, 255, 0.3);
@@ -130,7 +135,7 @@ a:hover{
 .container > div,
 .gu-mirror {
   margin: 11px;
-  padding: 11px;
+  padding: 8px;
   transition: opacity 0.4s ease-in-out;
 }
 .container > div {

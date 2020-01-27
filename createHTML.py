@@ -44,7 +44,10 @@ htmlinput = htmlinput + \
 htmlinput = htmlinput + \
     '<a class = "link" href = "anwesenheit.php">Anwesenheiten</a >\n'
 htmlinput = htmlinput + \
-    '<a class = "link" href = "https://jira.dormakaba.net/secure/Dashboard.jspa"> Jira </a>\n</div >\n'
+    '<a class = "link" href = "https://jira.dormakaba.net/secure/Dashboard.jspa" > Jira < /a >\n'
+htmlinput = htmlinput + '<div class="uhrzeit" id="time"></div>'
+
+htmlinput = htmlinput + '</div >\n'
 
 
 htmlinput = htmlinput + '<div class="flex-container">\n'
@@ -61,6 +64,7 @@ htmlinput = htmlinput + '<div class="sidebar2"></div>\n'
 htmlinput = htmlinput + '</div>\n'
 htmlinput = htmlinput + '\n<script defer src = "javascript.js"></script>\n'
 htmlinput = htmlinput + '<script defer src = "jquery-3.1.1.min.js"></script>\n'
+htmlinput = htmlinput + '<script defer src = "time.js"></script>\n'
 htmlinput = htmlinput + '\n</body>\n'
 htmlinput = htmlinput + '</html>'
 

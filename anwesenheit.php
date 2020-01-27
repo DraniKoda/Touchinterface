@@ -5,17 +5,15 @@
 <body>
     <div class="parent">
         <label for="hy">
-            <div class="flex-container">
-                <div class="flex-container">
-                    <div class="controlBar">
-                        <a class="link" href="index.html"><img src="design/logo.png" alt="Dormakaba Logo"></a>
-                        <a class="link" href="anwesenheit.php">Anwesenheiten</a>
-                        <a class="link" href="https://jira.dormakaba.net/secure/Dashboard.jspa">Jira</a>
-                    </div>
-                </div>
+            <div class="controlBar">
+                <a class="link" href="index.html"><img src="design/logo.png" alt="Dormakaba Logo"></a>
+                <a class="link" href="anwesenheit.php">Anwesenheiten</a>
+                <a class="link" href="https://jira.dormakaba.net/secure/Dashboard.jspa">Jira</a>
+                <div class="uhrzeit" id="time"></div>
             </div>
         </label>
-        <div class="wrapper">
+        <div>
+        <div class="wrapper heading">
             <div class="container">
                 <div> Anwesend </div>
             </div>
@@ -65,14 +63,14 @@ for ($x=0; $x<=$menschen;$x=$x+2){
 
 }
 ?>
-
 </div>
-
+</div>
 
 
     <script defer src="dist/dragula.js"></script>
     <script defer src="anwesenheit.js"></script>
     <script defer src="jquery-3.1.1.min.js"></script>
+    <script defer src="time.js"></script>
 
 </body>
 </html>

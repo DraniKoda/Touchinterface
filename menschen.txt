@@ -1,7 +1,7 @@
 Markus Kornhofer
-3
+1
 Johann Aigner
-3
+4
 Jörg Luef
 1
 Michael Landsteiner
@@ -24,3 +24,4 @@ Christoph Wurm
 2
 Raphael Lehner
 1
+
