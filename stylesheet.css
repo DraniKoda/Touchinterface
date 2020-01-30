@@ -40,6 +40,8 @@ button>img{
 
 .controlBar{
   display: flex;
+  /* justify-content: flex-start; */
+  /* align-content: flex-end; */
   height: 79px;
   border-bottom: #ededeb 1px solid;
   background-color: white;
@@ -51,15 +53,15 @@ button>img{
 .controlBar>a{
   font-size: 21px;
   padding: 22px;
+  font-weight: bold;   
 
 }
-.controlBar>div{
+.uhrzeit{
   font-size: 21px;
   padding: 22px;
-  justify-self: flex-end;
+  font-weight: bold;   
   color: #003594;
-  font-weight: bold;
-  width: 100%;
+  margin-left: auto;
 }
 
 a:link, a:visited{
@@ -71,32 +73,36 @@ a:hover{
   background-color: #ededeb;
 }
 
+
 /* Main Content und Sidebars */
+
 .flex-container{
   display: flex;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .main-content {
-	flex: 3;
+	/* flex: 3; */
   order: 2;
   display: flex;
   justify-content: center;
 }
 
 .sidebar1 {
-	flex: 1;
+	/* flex: 1; */
   order: 1;	
 }
 
 .sidebar2 {
-  flex: 1;
+  /* flex: 1; */
 	order: 3;
 }
 
 .flex-container > div {
   z-index: 5;
 }
+
+
 
 /* Anwesenheiten css*/
 

@@ -44,7 +44,7 @@ htmlinput = htmlinput + \
 htmlinput = htmlinput + \
     '<a class = "link" href = "anwesenheit.php">Anwesenheiten</a >\n'
 htmlinput = htmlinput + \
-    '<a class = "link" href = "https://jira.dormakaba.net/secure/Dashboard.jspa" > Jira < /a >\n'
+    '<a class = "link" href = "https://jira.dormakaba.net/secure/Dashboard.jspa" > Jira </a >\n'
 htmlinput = htmlinput + '<div class="uhrzeit" id="time"></div>'
 
 htmlinput = htmlinput + '</div >\n'
