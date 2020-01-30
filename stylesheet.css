@@ -82,19 +82,19 @@ a:hover{
 }
 
 .main-content {
-	/* flex: 3; */
+	flex: 3;
   order: 2;
   display: flex;
   justify-content: center;
 }
 
 .sidebar1 {
-	/* flex: 1; */
+	flex: 1;
   order: 1;	
 }
 
 .sidebar2 {
-  /* flex: 1; */
+  flex: 1;
 	order: 3;
 }
 
