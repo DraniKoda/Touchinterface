@@ -108,7 +108,7 @@ a:hover{
 
 
 .parent {
-  width: 960px;
+  width: 1080px;
   background-color: #fff;
   border-radius: 20px;
   padding: 2px;
@@ -117,7 +117,7 @@ a:hover{
 .wrapper {
   display: table;
   width: 100%;
-  font-size: 20px;
+  font-size: 22px;
 }
 .container:nth-child(even){
   background-color: #ededeb	;
@@ -145,7 +145,7 @@ a:hover{
 .container > div,
 .gu-mirror {
   margin: 3px;
-  padding: 12px;
+  padding: 10px;
   transition: opacity 0.4s ease-in-out;
   border: solid #fff 1px;
   border-radius: 10px;
@@ -165,6 +165,15 @@ a:hover{
   cursor: -moz-grab;
   cursor: -webkit-grab;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.avatar{
+  height: 22px;
+  margin-left: auto;
+}
+p{
+  margin: 0;
 }
 
 /* dragula sytles */

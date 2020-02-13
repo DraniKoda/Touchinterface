@@ -40,22 +40,22 @@ for ($x=0; $x<=$menschen;$x=$x+2){
 
     echo '<div class="wrapper"><div id="',$countup,'-defaults" class="container">';
     if ($linereadnumber == 1){
-        echo '<div id="' , $linereadnames , '" class= "userblue">' , $linereadnames , '</div>';
+        echo '<div id="' , $linereadnames , '" class= "userblue"><p>' , $linereadnames , '</p><img class ="avatar" src="/design/Avatar/',$linereadnames,'.jpg"></div>';
     }
     $countup = $countup +1;
     echo '</div><div id="',$countup,'-defaults" class="container">';
     if ($linereadnumber == 2){
-        echo '<div id="' , $linereadnames , '" class= "userred">' , $linereadnames , '</div>';
+        echo '<div id="' , $linereadnames , '" class= "userred">' , $linereadnames , '<img class ="avatar" src="/design/Avatar/',$linereadnames,'.jpg"></div>';
     }
     $countup = $countup +1;
     echo '</div><div id="',$countup,'-defaults" class="container">';
     if ($linereadnumber == 3){
-        echo '<div id="' , $linereadnames , '" class= "userred">' , $linereadnames , '</div>';
+        echo '<div id="' , $linereadnames , '" class= "userred">' , $linereadnames , '<img class ="avatar" src="/design/Avatar/',$linereadnames,'.jpg"></div>';
     }
     $countup = $countup +1;
     echo '</div><div id="',$countup,'-defaults" class="container">';
     if ($linereadnumber == 4){
-        echo '<div id="' , $linereadnames , '" class= "userred">' , $linereadnames , '</div>';
+        echo '<div id="' , $linereadnames , '" class= "userred">' , $linereadnames , '<img class ="avatar" src="/design/Avatar/',$linereadnames,'.jpg"></div>';
     }
     $countup = $countup +1;
     echo '</div></div>';
