@@ -40,7 +40,9 @@ htmlinput = htmlinput + \
 
 htmlinput = htmlinput + '<div class = "controlBar" >\n'
 htmlinput = htmlinput + \
-    '<a class = "link" href = "index.html"><img src="design/logo.png" alt="Dormakaba Logo"></a >\n'
+    '<a class = "link" href = "index.php"><img src="design/logo.png" alt="Dormakaba Logo"></a >\n'
+htmlinput = htmlinput + \
+    '<a class = "link" href = "anwesenheit_main.php"> Anwesenheit </a >\n'
 htmlinput = htmlinput + \
     '<a class = "link" href = "https://jira.dormakaba.net/secure/Dashboard.jspa" > Jira </a >\n'
 htmlinput = htmlinput + '<div class="uhrzeit" id="time"></div>'
@@ -60,9 +62,11 @@ while x < len(htmldata):
     x += 1
 
 htmlinput = htmlinput + '</div>\n'
-htmlinput = htmlinput + '<div class="sidebar2"></div>\n'
+htmlinput = htmlinput + '\n<div class="sidebar2"></div>\n'
 htmlinput = htmlinput + '</div>\n'
 htmlinput = htmlinput + '\n<script defer src = "javascript.js"></script>\n'
+htmlinput = htmlinput + '<script defer src = "dist/dragula.js"></script>\n'
+htmlinput = htmlinput + '<script defer src = "anwesenheit.js"></script>\n'
 htmlinput = htmlinput + '<script defer src = "jquery-3.1.1.min.js"></script>\n'
 htmlinput = htmlinput + '<script defer src = "time.js"></script>\n'
 htmlinput = htmlinput + '\n</body>\n'

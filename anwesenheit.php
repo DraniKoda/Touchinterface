@@ -75,6 +75,7 @@ for ($x=0; $x<=$menschen;$x=$x+2){
 </div>
 
 
+
     <!-- <script defer src="dist/dragula.js"></script>
     <script defer src="anwesenheit.js"></script>
     <script defer src="jquery-3.1.1.min.js"></script>
