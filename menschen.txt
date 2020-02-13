@@ -1,19 +1,19 @@
 Markus Kornhofer
 1
 Johann Aigner
-4
+2
 Jörg Luef
 1
 Michael Landsteiner
-3
+1
 Alfred Hagl
-2
+1
 Franz Fial
-2
+1
 Graf Manuel
-3
+1
 Heinz Navratil
-2
+1
 Luise Hacker
 1
 Bernadette Pummer
@@ -21,7 +21,7 @@ Bernadette Pummer
 Hanspeter Reiter
 1
 Christoph Wurm
-2
+1
 Raphael Lehner
 1
 

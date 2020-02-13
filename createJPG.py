@@ -10,7 +10,7 @@ os.chdir(readdir)
 
 count = 1
 for pdf_file in OrdnerListe:
-    if pdf_file.endswith(".pdf"):
+    if pdf_file.endswith(".pdf") | pdf_file.endswith(".PDF"):
         pagenumber = PdfFileReader(open(pdf_file, 'rb')).getNumPages()
         # print(pagenumber)
 

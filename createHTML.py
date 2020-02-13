@@ -7,7 +7,7 @@ OrdnerListe = os.listdir(readdir)
 os.chdir(readdir)
 
 
-dataId = 0
+dataId = 1
 count = 0
 htmldata = list()
 
@@ -42,8 +42,6 @@ htmlinput = htmlinput + '<div class = "controlBar" >\n'
 htmlinput = htmlinput + \
     '<a class = "link" href = "index.html"><img src="design/logo.png" alt="Dormakaba Logo"></a >\n'
 htmlinput = htmlinput + \
-    '<a class = "link" href = "anwesenheit.php">Anwesenheiten</a >\n'
-htmlinput = htmlinput + \
     '<a class = "link" href = "https://jira.dormakaba.net/secure/Dashboard.jspa" > Jira </a >\n'
 htmlinput = htmlinput + '<div class="uhrzeit" id="time"></div>'
 
@@ -53,6 +51,8 @@ htmlinput = htmlinput + '</div >\n'
 htmlinput = htmlinput + '<div class="flex-container">\n'
 htmlinput = htmlinput + '<div class="sidebar1"></div>\n'
 htmlinput = htmlinput + '<div class="main-content">\n'
+htmlinput = htmlinput + \
+    '<div class="embedded" id="1"><?php include "anwesenheit.php";?></div>\n'
 
 x = 0
 while x < len(htmldata):
@@ -70,6 +70,6 @@ htmlinput = htmlinput + '</html>'
 
 # writing the html file
 
-htmlfile = open("index.html", "w+")
+htmlfile = open("index.php", "w+")
 htmlfile.write(htmlinput)
 htmlfile.close()
