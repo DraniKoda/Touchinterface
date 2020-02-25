@@ -1,13 +1,16 @@
 <!DOCTYPE html>
+<head>
 <html lang="de">
-<link rel = "stylesheet" href = "stylesheet.css">
+<link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
+<link rel = "stylesheet" type = "text/css" href = "icofont.min.css">
 <title>Webinterface Touchpanel</title>
+</head>
 
 <body>
-<button type = "button" id = "leftButton" onclick = "prevStep()"><img src="design/arrowleft.png" alt="links"></button>
-<button type = "button" id = "rightButton" onclick = "nextStep()"><img src="design/arrowright.png" alt="rechts"></button>
-<button type = "button" id = "stopButton" onclick = "stop()"><img src="design/stop.jpg" alt="stop"></button>
-<button type = "button" id = "resumeButton" onclick = "resume()"><img src="design/resume.png" alt="resume"></button>
+<button type = "button" id = "leftButton" onclick = "prevStep()" > <div class = "icon-holder" > <div class = "icon" > <i class = "icofont-rounded-left" > </i > </div > </div > </button >
+<button type = "button" id = "rightButton" onclick = "nextStep()" > <div class = "icon-holder" > <div class = "icon" > <i class = "icofont-rounded-right" > </i > </div > </div > </button >
+<button type = "button" id = "stopButton" onclick = "stop()" > <div class = "icon-holder" > <div class = "icon" > <i class = "icofont-ui-pause" > </i > </div > </div > </button >
+<button type = "button" id = "resumeButton" onclick = "resume()" > <div class = "icon-holder" > <div class = "icon" > <i class = "icofont-ui-play" > </i > </div > </div > </button >
 <div class = "controlBar" >
 <a class = "link" href = "index.php"><img src="design/logo.png" alt="Dormakaba Logo"></a >
 <a class = "link" href = "anwesenheit_main.php"> Anwesenheit </a >

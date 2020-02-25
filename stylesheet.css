@@ -13,10 +13,7 @@ button{
   z-index: 50;
   position: absolute;
   opacity: 50%;
-}
-button>img{
-  height: 100%;
-  width: 100%;
+  cursor: pointer;
 }
 #leftButton {
   left: 0;
@@ -29,6 +26,10 @@ button>img{
 #stopButton, #resumeButton{
   top: 90%;
   left: 47%;
+}
+.icon-holder .icon i {
+	font-size: 3em;
+	color: #003594;
 }
 
 .embedded {
@@ -124,6 +125,9 @@ a:hover{
 }
 .userblue{
   background-color: #003594;
+}
+.userorange{
+  background-color: orange;
 }
 .userred{
   background-color: #e4002b;

@@ -7,6 +7,9 @@ readdir = "./data"
 OrdnerListe = os.listdir(readdir)
 os.chdir(readdir)
 
+for jpg_file in OrdnerListe:
+    if jpg_file.endswith(".jpg") | jpg_file.endswith(".png"):
+        os.remove(jpg_file)
 
 count = 1
 for pdf_file in OrdnerListe:

@@ -33,32 +33,57 @@ $countup=1;
 $menschen = 26;
 $fileread = fread($myfile,filesize("menschen.txt"));
 $splitting = preg_split("/\\n/",$fileread);
+$countforpic = 1;
+$date = new DateTime();
+$weekday = $date->format('N');
+
 
 for ($x=0; $x<=$menschen;$x=$x+2){
+    $userTZ = 0;
     $linereadnames=$splitting[$x];
     $linereadnumber = $splitting[$x+1];
-
+    $usercolor = "userblue";
+    if($countforpic == "6"){ //Franz Fial
+        $usercolor = "userblue DO FR";
+        if($weekday == "4" || $weekday == "5"){
+            $usercolor = "userorange DO FR";
+        }
+    }
+    if($countforpic == "13"){ //Lehner Raphael
+        $usercolor = "userblue FR";
+        if($weekday == "5"){
+            $usercolor = "userorange DO FR";
+        }
+    }
     echo '<div class="wrapper"><div id="',$countup,'-defaults" class="container">';
     if ($linereadnumber == 1){
-        echo '<div id="' , $linereadnames , '" class= "userblue"><p>' , $linereadnames , '</p><img class ="avatar" src="design/Avatar/',$linereadnames,'.jpg"></div>';
+        echo '<div id="' , $linereadnames , '" class= "',$usercolor,'"><p>' , $linereadnames , '</p><img class ="avatar" src="design/Avatar/',$countforpic,'.jpg"></div>';
+    }
+    $usercolor = "userred";
+    if($countforpic == "6"){ //Franz Fial
+        $usercolor = "userred DO FR";
+    }
+    if($countforpic == "13"){ //Lehner Raphael
+        $usercolor = "userred FR";
     }
     $countup = $countup +1;
     echo '</div><div id="',$countup,'-defaults" class="container">';
     if ($linereadnumber == 2){
-        echo '<div id="' , $linereadnames , '" class= "userred">' , $linereadnames , '<img class ="avatar" src="design/Avatar/',$linereadnames,'.jpg"></div>';
+        echo '<div id="' , $linereadnames , '" class= "',$usercolor,'"><p>' , $linereadnames , '</p><img class ="avatar" src="design/Avatar/',$countforpic,'.jpg"></div>';
     }
     $countup = $countup +1;
     echo '</div><div id="',$countup,'-defaults" class="container">';
     if ($linereadnumber == 3){
-        echo '<div id="' , $linereadnames , '" class= "userred">' , $linereadnames , '<img class ="avatar" src="design/Avatar/',$linereadnames,'.jpg"></div>';
+        echo '<div id="' , $linereadnames , '" class= "',$usercolor,'"><p>' , $linereadnames , '</p><img class ="avatar" src="design/Avatar/',$countforpic,'.jpg"></div>';
     }
     $countup = $countup +1;
     echo '</div><div id="',$countup,'-defaults" class="container">';
     if ($linereadnumber == 4){
-        echo '<div id="' , $linereadnames , '" class= "userred">' , $linereadnames , '<img class ="avatar" src="design/Avatar/',$linereadnames,'.jpg"></div>';
+        echo '<div id="' , $linereadnames , '" class= "',$usercolor,'"><p>' , $linereadnames , '</p><img class ="avatar" src="design/Avatar/',$countforpic,'.jpg"></div>';
     }
     $countup = $countup +1;
     echo '</div></div>';
+    $countforpic = $countforpic + 1;
 
 }
 ?>

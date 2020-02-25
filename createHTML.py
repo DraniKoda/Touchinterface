@@ -24,18 +24,23 @@ while count < len(OrdnerListe):
 os.chdir(savedir)
 
 htmlinput = '<!DOCTYPE html>\n'
+htmlinput = htmlinput + '<head>\n'
 htmlinput = htmlinput + '<html lang="de">\n'
-htmlinput = htmlinput + '<link rel = "stylesheet" href = "stylesheet.css">\n'
+htmlinput = htmlinput + \
+    '<link rel = "stylesheet" type = "text/css" href = "stylesheet.css">\n'
+htmlinput = htmlinput + \
+    '<link rel = "stylesheet" type = "text/css" href = "icofont.min.css">\n'
 htmlinput = htmlinput + '<title>Webinterface Touchpanel</title>\n'
+htmlinput = htmlinput + '</head>\n'
 htmlinput = htmlinput + '\n<body>\n'
 htmlinput = htmlinput + \
-    '<button type = "button" id = "leftButton" onclick = "prevStep()"><img src="design/arrowleft.png" alt="links"></button>\n'
+    '<button type = "button" id = "leftButton" onclick = "prevStep()" > <div class = "icon-holder" > <div class = "icon" > <i class = "icofont-rounded-left" > </i > </div > </div > </button >\n'
 htmlinput = htmlinput + \
-    '<button type = "button" id = "rightButton" onclick = "nextStep()"><img src="design/arrowright.png" alt="rechts"></button>\n'
+    '<button type = "button" id = "rightButton" onclick = "nextStep()" > <div class = "icon-holder" > <div class = "icon" > <i class = "icofont-rounded-right" > </i > </div > </div > </button >\n'
 htmlinput = htmlinput + \
-    '<button type = "button" id = "stopButton" onclick = "stop()"><img src="design/stop.jpg" alt="stop"></button>\n'
+    '<button type = "button" id = "stopButton" onclick = "stop()" > <div class = "icon-holder" > <div class = "icon" > <i class = "icofont-ui-pause" > </i > </div > </div > </button >\n'
 htmlinput = htmlinput + \
-    '<button type = "button" id = "resumeButton" onclick = "resume()"><img src="design/resume.png" alt="resume"></button>\n'
+    '<button type = "button" id = "resumeButton" onclick = "resume()" > <div class = "icon-holder" > <div class = "icon" > <i class = "icofont-ui-play" > </i > </div > </div > </button >\n'
 
 
 htmlinput = htmlinput + '<div class = "controlBar" >\n'

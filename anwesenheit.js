@@ -104,6 +104,8 @@ function postToServer(str) {
     xhttp.open("POST", "writetotxt.php?q=" + str, true);
     xhttp.send();
 }
+var d = new Date();
+DayofWeek = d.getDay();
 function changeColor(element) {
     //element.parentElement.id ist 1-defaults müsste noch auf die zahl gesplittet werden um einfacher zu werden
     var numberarray = [1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49]
@@ -113,15 +115,28 @@ function changeColor(element) {
     for (i = 0; i < numberarray.length; i++) {
         if (number[0] == numberarray[i]) {
             //user will be displayed blue
-            // console.log("blue");
-            document.getElementById(element.id).className = "userblue";
+
+            if (document.getElementById(element.id).classList.contains("DO") && DayofWeek == "4" || document.getElementById(element.id).classList.contains("FR") && DayofWeek == "2") {
+                console.log("orange");
+                document.getElementById(element.id).classList.remove("userblue");
+                document.getElementById(element.id).classList.remove("userred");
+                document.getElementById(element.id).classList.add("userorange");
+            } else {
+                console.log("blue");
+                document.getElementById(element.id).classList.remove("userorange");
+                document.getElementById(element.id).classList.remove("userred");
+                document.getElementById(element.id).classList.add("userblue");
+
+            }
             check = 1;
 
         }
     }
     if (check == 0) {
-        // console.log("red");
-        document.getElementById(element.id).className = "userred";
+        console.log("red");
+        document.getElementById(element.id).classList.remove("userorange");
+        document.getElementById(element.id).classList.remove("userblue");
+        document.getElementById(element.id).classList.add("userred");
     }
 
 }
