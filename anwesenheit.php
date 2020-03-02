@@ -52,7 +52,7 @@ for ($x=0; $x<=$menschen;$x=$x+2){
     if($countforpic == "13"){ //Lehner Raphael
         $usercolor = "userblue FR";
         if($weekday == "5"){
-            $usercolor = "userorange DO FR";
+            $usercolor = "userorange FR";
         }
     }
     echo '<div class="wrapper"><div id="',$countup,'-defaults" class="container">';
