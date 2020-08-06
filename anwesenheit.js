@@ -108,12 +108,12 @@ var d = new Date();
 DayofWeek = d.getDay();
 function changeColor(element) {
     //element.parentElement.id ist 1-defaults müsste noch auf die zahl gesplittet werden um einfacher zu werden
-    var numberarray = [1, 6, 11, 16, 21, 26, 31, 36, 41, 46, 51, 56, 61]
+    var numberarray = [1, 2, 6, 7, 11, 12, 16, 17, 21, 22, 26, 27, 31, 32, 36, 37, 41, 42, 46, 47, 51, 52, 56, 57, 61, 62] // these position are blue/orange
     var check = 0;
     var number = element.parentElement.id.split("-");
     // console.log(number);
     for (i = 0; i < numberarray.length; i++) {
-        if (number[0] == numberarray[i] || number[1] == numberarray[i]) {
+        if (number[0] == numberarray[i]) {
             //user will be displayed blue
 
             if (document.getElementById(element.id).classList.contains("DO") && DayofWeek == "4" || document.getElementById(element.id).classList.contains("FR") && DayofWeek == "2") {
