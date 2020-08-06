@@ -22,5 +22,9 @@ for pdf_file in OrdnerListe:
             doc = fitz.open(pdf_file)
             page = doc.loadPage(i)
             pix = page.getPixmap()
-            pix.writePNG(str(count) + "_" + str(i) + ".png")
+            if i < 10:
+                x = str(0) + str(i)
+            else:
+                x = str(i)
+            pix.writePNG(str(count) + "_" + x + ".png")
         count += 1

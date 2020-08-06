@@ -17,6 +17,9 @@
                 <div> Anwesend </div>
             </div>
             <div class="HeaderContainer">
+                <div> HomeOffice </div>
+            </div>
+            <div class="HeaderContainer">
                 <div> Dienstreise </div>
             </div>
             <div class="HeaderContainer">
@@ -59,6 +62,11 @@ for ($x=0; $x<=$menschen;$x=$x+2){
     if ($linereadnumber == 1){
         echo '<div id="' , $linereadnames , '" class= "',$usercolor,'"><p>' , $linereadnames , '</p><img class ="avatar" src="design/Avatar/',$countforpic,'.jpg"></div>';
     }
+    $countup = $countup +1;
+    echo '</div><div id="',$countup,'-defaults" class="container">';
+    if ($linereadnumber == 2){
+        echo '<div id="' , $linereadnames , '" class= "',$usercolor,'"><p>' , $linereadnames , '</p><img class ="avatar" src="design/Avatar/',$countforpic,'.jpg"></div>';
+    }
     $usercolor = "userred";
     if($countforpic == "6"){ //Franz Fial
         $usercolor = "userred DO FR";
@@ -68,17 +76,17 @@ for ($x=0; $x<=$menschen;$x=$x+2){
     }
     $countup = $countup +1;
     echo '</div><div id="',$countup,'-defaults" class="container">';
-    if ($linereadnumber == 2){
-        echo '<div id="' , $linereadnames , '" class= "',$usercolor,'"><p>' , $linereadnames , '</p><img class ="avatar" src="design/Avatar/',$countforpic,'.jpg"></div>';
-    }
-    $countup = $countup +1;
-    echo '</div><div id="',$countup,'-defaults" class="container">';
     if ($linereadnumber == 3){
         echo '<div id="' , $linereadnames , '" class= "',$usercolor,'"><p>' , $linereadnames , '</p><img class ="avatar" src="design/Avatar/',$countforpic,'.jpg"></div>';
     }
     $countup = $countup +1;
     echo '</div><div id="',$countup,'-defaults" class="container">';
     if ($linereadnumber == 4){
+        echo '<div id="' , $linereadnames , '" class= "',$usercolor,'"><p>' , $linereadnames , '</p><img class ="avatar" src="design/Avatar/',$countforpic,'.jpg"></div>';
+    }
+    $countup = $countup +1;
+    echo '</div><div id="',$countup,'-defaults" class="container">';
+    if ($linereadnumber == 5){
         echo '<div id="' , $linereadnames , '" class= "',$usercolor,'"><p>' , $linereadnames , '</p><img class ="avatar" src="design/Avatar/',$countforpic,'.jpg"></div>';
     }
     $countup = $countup +1;

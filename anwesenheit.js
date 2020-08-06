@@ -1,91 +1,91 @@
 function $(id) {
     return document.getElementById(id);
 }
-dragula([$("1-defaults"), $("2-defaults"), $("3-defaults"), $("4-defaults")])
+dragula([$("1-defaults"), $("2-defaults"), $("3-defaults"), $("4-defaults"), $("5-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("5-defaults"), $("6-defaults"), $("7-defaults"), $("8-defaults")])
+dragula([$("6-defaults"), $("7-defaults"), $("8-defaults"), $("9-defaults"), $("10-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("9-defaults"), $("10-defaults"), $("11-defaults"), $("12-defaults")])
+dragula([$("11-defaults"), $("12-defaults"), $("13-defaults"), $("14-defaults"), $("15-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("13-defaults"), $("14-defaults"), $("15-defaults"), $("16-defaults")])
+dragula([$("16-defaults"), $("17-defaults"), $("18-defaults"), $("19-defaults"), $("20-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("17-defaults"), $("18-defaults"), $("19-defaults"), $("20-defaults")])
+dragula([$("21-defaults"), $("22-defaults"), $("23-defaults"), $("24-defaults"), $("25-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("21-defaults"), $("22-defaults"), $("23-defaults"), $("24-defaults")])
+dragula([$("26-defaults"), $("27-defaults"), $("28-defaults"), $("29-defaults"), $("30-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("25-defaults"), $("26-defaults"), $("27-defaults"), $("28-defaults")])
+dragula([$("31-defaults"), $("32-defaults"), $("33-defaults"), $("34-defaults"), $("35-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("29-defaults"), $("30-defaults"), $("31-defaults"), $("32-defaults")])
+dragula([$("36-defaults"), $("37-defaults"), $("38-defaults"), $("39-defaults"), $("40-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("33-defaults"), $("34-defaults"), $("35-defaults"), $("36-defaults")])
+dragula([$("41-defaults"), $("42-defaults"), $("43-defaults"), $("44-defaults"), $("45-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("37-defaults"), $("38-defaults"), $("39-defaults"), $("40-defaults")])
+dragula([$("46-defaults"), $("47-defaults"), $("48-defaults"), $("49-defaults"), $("50-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("41-defaults"), $("42-defaults"), $("43-defaults"), $("44-defaults")])
+dragula([$("51-defaults"), $("52-defaults"), $("53-defaults"), $("54-defaults"), $("55-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("45-defaults"), $("46-defaults"), $("47-defaults"), $("48-defaults")])
+dragula([$("56-defaults"), $("57-defaults"), $("58-defaults"), $("59-defaults"), $("60-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
         changeColor(el);
 
     })
-dragula([$("49-defaults"), $("50-defaults"), $("51-defaults"), $("52-defaults")])
+dragula([$("61-defaults"), $("62-defaults"), $("63-defaults"), $("64-defaults"), $("65-defaults")])
     .on("drop", function (el) {
         // console.log(el.parentElement.id + "-" + el.id);
         postToServer(el.parentElement.id + "-" + el.id);
@@ -108,7 +108,7 @@ var d = new Date();
 DayofWeek = d.getDay();
 function changeColor(element) {
     //element.parentElement.id ist 1-defaults müsste noch auf die zahl gesplittet werden um einfacher zu werden
-    var numberarray = [1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49]
+    var numberarray = [1, 6, 11, 16, 21, 26, 31, 36, 41, 46, 51, 56, 61]
     var check = 0;
     var number = element.parentElement.id.split("-");
     // console.log(number);
