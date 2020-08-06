@@ -52,6 +52,9 @@ for ($x = 0; $x <= $menschen; $x=$x+2) {
         }elseif ($Nummer == 4){
             fwrite($myfile,$Nummer."\r\n");
             // echo $Nummer;
+        }elseif ($Nummer == 5){
+            fwrite($myfile,$Nummer."\r\n");
+            // echo $Nummer;
         }
     }
     if($Names != $splitting[$x]) {
@@ -69,7 +72,7 @@ for ($x = 0; $x <= $menschen; $x=$x+2) {
     if($Nummer <= 0){
         $Nummer = 0;
     }else{
-        $Nummer = $Nummer - 4;
+        $Nummer = $Nummer - 5;
     }
 
 }
