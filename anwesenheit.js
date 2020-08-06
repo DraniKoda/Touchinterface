@@ -113,7 +113,7 @@ function changeColor(element) {
     var number = element.parentElement.id.split("-");
     // console.log(number);
     for (i = 0; i < numberarray.length; i++) {
-        if (number[0] == numberarray[i]) {
+        if (number[0] == numberarray[i] || number[1] == numberarray[i]) {
             //user will be displayed blue
 
             if (document.getElementById(element.id).classList.contains("DO") && DayofWeek == "4" || document.getElementById(element.id).classList.contains("FR") && DayofWeek == "2") {

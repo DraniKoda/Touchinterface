@@ -28,7 +28,7 @@ button{
   left: 47%;
 }
 .icon-holder .icon i {
-	font-size: 3em;
+	font-size: 50px;
 	color: #003594;
 }
 
@@ -135,7 +135,7 @@ a:hover{
 
 .container, .HeaderContainer{
   display: table-cell;
-  width: 25%;
+  width: 20%;
 }
 .heading{
   font-weight: bold;
